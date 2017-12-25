@@ -807,7 +807,7 @@ jQuery(function($){
 			$album.append(html);
 		}
 		albumsLoaded++;
-
+		
 		if (albumsLoaded === 2) {
 			$album.slick({
 				arrows: false,
@@ -883,6 +883,40 @@ jQuery(function($){
 			});
 		});
 	}
+
+
+	// showcase slider
+
+	function setupHtmlGames(){
+
+		var $showcaseSlider = $('#showcase-slider');
+		console.log($showcaseSlider);
+		
+		$showcaseSlider.slick({
+			arrows: false,
+			dots: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplaySpeed: 3000,
+			responsive: [
+				{
+					breakpoint: 979,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 599,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	}
+	setupHtmlGames();
 
 	responsiveIframe();
 

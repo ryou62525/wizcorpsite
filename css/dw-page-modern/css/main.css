@@ -6705,7 +6705,9 @@ section .slick-dots li.slick-active button {
     filter: alpha(opacity=100)!important;
 }
 
-.portfolio .screenshot,.section-blog .screenshot {
+.portfolio .screenshot,
+.showcase .screenshot,
+.section-blog .screenshot {
     position: relative;
     padding-top: 9px;
 }
@@ -9305,7 +9307,7 @@ margin-right:0;
 #buddypress div.activity-comments,#buddypress .activity-list .activity-content {
 margin:0;
 }
-};/*! 
+};/* ! 
  * Bootstrap Responsive v2.2.1
  *
  * Copyright 2012 Twitter, Inc
@@ -10638,6 +10640,40 @@ margin:0;
     .portfolio .carousel-nav ul,.portfolio .carousel-nav:before {
         display: none;
     }
+
+    /* --------------------------------- showcase ---------------------------------*/
+    .showcase .row-fluid:first-child .block:first-child {
+        margin-top: 0;
+    }
+
+    .showcase .block {
+        margin-top: 30px;
+    }
+
+    .showcase .block img {
+        width: 100%;
+        height: auto;
+    }
+
+    .showcase .carousel-nav .carousel-control {
+        display: block;
+        z-index: 999;
+        background: url(../img/arrow-left-right.png) no-repeat 10px center #fff;
+        text-indent: -9999px;
+    }
+
+    .showcase .carousel-nav .carousel-control.right {
+        background-position: -27px center;
+    }
+
+    .showcase .carousel>.carousel-nav:before {
+        display: none;
+    }
+
+    .showcase .carousel-nav ul,.showcase .carousel-nav:before {
+        display: none;
+    }
+    /* --------------------------------- showcase --------------------------------- */
 
     .about .team .oneCol .personal {
         padding: 0;
@@ -13465,7 +13501,7 @@ body .dwqa-container a {
 {
     outline: none;
 }
-;/* Slider */
+;Slider
 .slick-slider
 {
     position: relative;

@@ -122,7 +122,7 @@ input[type="color"],
 }
 
 .section {
-	background: #fff;
+	background: rgb(255, 255, 255);
 }
 
 .section-title {
@@ -155,7 +155,7 @@ input[type="color"],
 	background: #fff;
 	background-image: none;
 	box-shadow: 0 2px 3px rgba(0,0,0,.1);
-	filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+	filter: e(("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
 }
 
 .navbar-static-top .container,
@@ -333,14 +333,20 @@ input[type="color"],
 }
 
 .section.tumblr,
-.section.portfolio {
+.section.portfolio,
+.section.showcase,
+.section.contact-ja {
 	background: url(img/portfolio-bg.jpg) fixed;
 	background-size: cover;
 	padding-bottom: 35px;
 }
 
+.section.showcase .thumbnails .thumbnail {
+	background: rgb(255, 255, 255);
+}
+
 .section.portfolio .thumbnails .thumbnail {
-	background: #fff;
+	background: rgb(255, 255, 255);
 }
 
 .portfolio .thumbnails .row-fluid {
@@ -367,7 +373,9 @@ input[type="color"],
 }
 
 .portfolio .section-content-title,
-.portfolio .section-content-title a {
+.portfolio .section-content-title a,
+.showcase .section-content-title,
+.showcase .section-content-title a {
 	color: #111 !important;
 }
 
@@ -419,6 +427,18 @@ input[type="color"],
 .portfolio .carousel-nav li:hover span {
 	background: #fff;
 }
+
+/*----------------------showcase-------------------------*/
+
+.showcase .caption {
+	/*padding: 5px 10px 20px;*/
+	max-width: 220px;
+	max-height: 80;
+	margin: 0 auto;
+	background: #fff;
+}
+
+/*----------------------showcase-------------------------*/
 
 .popupVideo {
 	width: 100% !important;

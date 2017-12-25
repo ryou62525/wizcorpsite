@@ -6293,7 +6293,9 @@ section .slick-dots li.slick-active button {
     filter: alpha(opacity=100)!important;
 }
 
-.portfolio .screenshot,.section-blog .screenshot {
+.portfolio .screenshot,
+.showcase .screenshot,
+.section-blog .screenshot {
     position: relative;
     padding-top: 9px;
 }
