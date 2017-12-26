@@ -243,7 +243,7 @@ textarea {
     line-height: 0;
 }
 
-.row-fluid:after {
+.:after {
     clear: both;
 }
 
@@ -6072,6 +6072,10 @@ body.page .page {
 .section .thumbnails .thumbnail {
     border: 0;
     padding: 0;
+}
+
+#showcase-slider .thumbnail{
+    margin: 23px;
 }
 
 .section-description {

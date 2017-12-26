@@ -327,7 +327,7 @@ jQuery(function($){
 		
 		$showcaseSlider.slick({
 			arrows: false,
-			dots: true,
+			dots: false,
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			autoplaySpeed: 3000,
