@@ -57,6 +57,18 @@ module.exports = function(grunt) {
 			'options': {
 				'processImport': false
 			}
+		},
+		watcher: {
+			scripts: {
+				files: [
+					'js/src/**/*.js',
+					'css/magnific-popup/*.css',
+					'css/dw-page-modern/css/template.css',
+					'css/**/*.css',
+					'!css/dw-page-modern/style.css'
+				],
+				tasks: ['default']
+			}
 		}
 	});
 
@@ -65,6 +77,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-watcher');
 
 	// Default task(s).
 	grunt.registerTask('default', ['clean', 'concat', 'uglify', 'cssmin']);
