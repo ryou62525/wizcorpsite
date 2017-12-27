@@ -327,13 +327,21 @@ jQuery(function($){
 		
 		$showcaseSlider.slick({
 			arrows: false,
-			dots: false,
+			dots: true,
 			slidesToShow: 4,
-			slidesToScroll: 1,
-			autoplaySpeed: 3000,
+			slidesToScroll: 4,
+			autoplay: false,
+			pauseOnHover : false,
 			responsive: [
 				{
-					breakpoint: 979,
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					}
+				},
+				{
+					breakpoint: 800,
 					settings: {
 						slidesToShow: 2,
 						slidesToScroll: 2
@@ -348,6 +356,22 @@ jQuery(function($){
 				}
 			]
 		});
+
+		/*
+		$showcaseSlider.magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery: { enabled: true },
+			callbacks: {
+				open: function() {
+					$showcaseSlider.slick('slickPause');
+				},
+				close: function() {
+					$showcaseSlider.slick('slickPlay');
+				}
+			}
+		});
+		*/
 	}
 	setupHtmlGames();
 
