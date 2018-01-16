@@ -6164,6 +6164,12 @@ body.page .page {
     margin-top: 60px;
     position:relative;
 }
+#team-slider,
+#portfolio-slider,
+#showcase-slider {
+    margin-top: 60px;
+    position:relative;
+}
 
 .tumblr .post {
     margin-left: 15px;
@@ -6285,19 +6291,16 @@ section .slick-dots li.slick-active button {
     text-align: center;
 }
 
-.portfolio .block.first,.section-blog .block.first,
-.showcase .block.first,.section-blog .block.first {
+.portfolio .block.first,.section-blog .block.first {
     margin-left: 0!important;
     clear: left;
 }
 
-.portfolio .thumbnail:hover h2 a,.section-blog .thumbnail:hover h2 a,
-.showcase .thumbnail:hover h2 a,.section-blog .thumbnail:hover h2 a {
+.portfolio .thumbnail:hover h2 a,.section-blog .thumbnail:hover h2 a{
     color: #f7682c;
 }
 
-.portfolio .thumbnail:hover .img_grayscale,.section-blog .thumbnail:hover .img_grayscale,
-.showcase .thumbnail:hover .img_grayscale,.section-blog .thumbnail:hover .img_grayscale {
+.portfolio .thumbnail:hover .img_grayscale,.section-blog .thumbnail:hover .img_grayscale {
     opacity: 1!important;
     filter: alpha(opacity=100)!important;
 }
@@ -6309,28 +6312,24 @@ section .slick-dots li.slick-active button {
     padding-top: 9px;
 }
 
-.portfolio .carousel,.section-blog .carousel,
-.showcase .carousel,.section-blog .carousel  {
+.portfolio .carousel,.section-blog .carousel {
     margin-bottom: 0;
 }
 
-.portfolio .thumbnails .row-fluid,.section-blog .thumbnails .row-fluid,
-.showcase .thumbnails .row-fluid,.section-blog .thumbnails .row-fluid  {
+.portfolio .thumbnails .row-fluid,.section-blog .thumbnails .row-fluid{
     margin-top: 20px;
 }
 
-.portfolio .thumbnails .row-fluid:first-child,.section-blog .thumbnails .row-fluid:first-child,
-.showcase .thumbnails .row-fluid:first-child,.section-blog .thumbnails .row-fluid:first-child  {
+.portfolio .thumbnails .row-fluid:first-child,.section-blog .thumbnails .row-fluid:first-child {
     margin-top: 0;
 }
 
 .portfolio .thumbnail img,.section-blog .thumbnail img,
-.showcase .thumbnail img,.section-blog .thumbnail img {
+.showcase .thumbnail img {
     width: 100%;
 }
 
-.portfolio .carousel-nav ul,.section-blog .carousel-nav ul,
-.showcase .carousel-nav ul,.section-blog .carousel-nav ul  {
+.portfolio .carousel-nav ul,.section-blog .carousel-nav ul {
     list-style: none;
     margin: 0;
     display: inline;
@@ -6340,8 +6339,7 @@ section .slick-dots li.slick-active button {
     z-index: 1;
 }
 
-.portfolio .carousel-nav li,.section-blog .carousel-nav li,
-.showcase .carousel-nav li,.section-blog .carousel-nav li {
+.portfolio .carousel-nav li,.section-blog .carousel-nav li {
     display: inline-block;
     border: 1px solid #ddd;
     cursor: pointer;
@@ -6354,13 +6352,11 @@ section .slick-dots li.slick-active button {
     height: 13px;
 }
 
-.portfolio .carousel-nav li:first-child,.section-blog .carousel-nav li:first-child,
-.showcase .carousel-nav li:first-child,.section-blog .carousel-nav li:first-child{
+.portfolio .carousel-nav li:first-child,.section-blog .carousel-nav li:first-child{
     margin-left: 0;
 }
 
-.portfolio .carousel-nav li a,.section-blog .carousel-nav li a,
-.showcase .carousel-nav li a,.section-blog .carousel-nav li a {
+.portfolio .carousel-nav li a,.section-blog .carousel-nav li a {
     display: block;
     padding: 7px;
     position: relative;
@@ -6373,8 +6369,7 @@ section .slick-dots li.slick-active button {
     box-sizing: border-box;
 }
 
-.portfolio .carousel-nav li.active span,.section-blog .carousel-nav li.active span,.portfolio .carousel-nav li:hover span,.section-blog .carousel-nav li:hover span,
-.showcase .carousel-nav li.active span,.section-blog .carousel-nav li.active span,.portfolio .carousel-nav li:hover span,.section-blog .carousel-nav li:hover span {
+.portfolio .carousel-nav li.active span,.section-blog .carousel-nav li.active span,.portfolio .carousel-nav li:hover span,.section-blog .carousel-nav li:hover span{
     background: #f7682c;
     display: block;
     -webkit-border-radius: 500px;
@@ -6384,14 +6379,12 @@ section .slick-dots li.slick-active button {
     height: 5px;
 }
 
-.portfolio .carousel-nav .carousel-control,.section-blog .carousel-nav .carousel-control,
-.showcase .carousel-nav .carousel-control,.section-blog .carousel-nav .carousel-control {
+.portfolio .carousel-nav .carousel-control,.section-blog .carousel-nav .carousel-control{
     display: none;
     top: 50%;
 }
 
-.portfolio .carousel>.carousel-nav:before,.section-blog .carousel .carousel-nav:before,
-.showcase .carousel>.carousel-nav:before,.section-blog .carousel .carousel-nav:before {
+.portfolio .carousel>.carousel-nav:before,.section-blog .carousel .carousel-nav:before {
     content: "";
     display: block;
     height: 1px;

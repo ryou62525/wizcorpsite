@@ -340,7 +340,19 @@ input[type="color"],
 	background-size: cover;
 	padding-bottom: 35px;
 }
-
+body::before {
+	background:url('bg.png') no-repeat left top;
+	background-size: 100% auto;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 108px;
+	content: "";
+	z-index: -1;
+  }
 
 .section.showcase .thumbnails .thumbnail {
 	background: rgb(255, 255, 255);
@@ -433,13 +445,11 @@ input[type="color"],
 	background: #fff;
 }
 
-/*----------------------showcase-------------------------*/
-
-#showcase-slider .thumbnail{
+#showcase-slider .thumbnail,
+#portfolio-slider .thumbnail,
+#team-slider .thumbnail{
 	    margin: 5px;
 }
-
-/*----------------------showcase-------------------------*/
 
 .popupVideo {
 	width: 100% !important;
@@ -788,6 +798,7 @@ body[class*="landing"] #colophon a:focus,
 @media (max-width: 1280px) {
 	body,
 	.section.tumblr,
+	.section.showcase,
 	.section.portfolio {
 		background-size: cover;
 	}

@@ -117,7 +117,7 @@ jQuery(function($){
 		goToSectionID(des);
 	});
 
-	$('.team .personal').hover(
+	$('.personal').hover(
 		function(){
 			$(this).find('.img_wrapper .img_grayscale').stop().animate({opacity:1},200);
 
@@ -317,31 +317,21 @@ jQuery(function($){
 		});
 	}
 
-
-	// showcase slider
-
+	//showcase
 	function setupHtmlGames(){
 
 		var $showcaseSlider = $('#showcase-slider');
 		console.log($showcaseSlider);
 		
-		$showcaseSlider.slick({
-			arrows: false,
+		$showcaseSlider
+		.slick({
+			infinite: true,
 			dots: true,
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			autoplay: false,
-			pauseOnHover : false,
+			slidesToShow: 3,
+			slidesToScroll: 3,
 			responsive: [
 				{
-					breakpoint: 1100,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3
-					}
-				},
-				{
-					breakpoint: 800,
+					breakpoint: 979,
 					settings: {
 						slidesToShow: 2,
 						slidesToScroll: 2
@@ -357,29 +347,86 @@ jQuery(function($){
 			]
 		});
 
-		/*
-		$showcaseSlider.magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			gallery: { enabled: true },
-			callbacks: {
-				open: function() {
-					$showcaseSlider.slick('slickPause');
-				},
-				close: function() {
-					$showcaseSlider.slick('slickPlay');
-				}
-			}
-		});
-		*/
 	}
 	setupHtmlGames();
+
+	//Portfolio
+	function setupPortfolio(){
+		var $portfolioSlider = $('#portfolio-slider');
+		console.log($portfolioSlider);
+		console.log("portofolio");
+		
+		$portfolioSlider
+		.slick({
+			infinite: true,
+			dots: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			responsive: [
+				{
+					breakpoint: 979,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 599,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	}
+	setupPortfolio();
+
+	//team
+	function setupTeam(){
+		var $teamSlider = $('#team-slider');
+		console.log($teamSlider);
+		console.log("team");
+		
+		$teamSlider
+		.slick({
+			arrows: false,
+			infinite: true,
+			dots: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			responsive: [
+				{
+					breakpoint: 979,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 599,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+		function thumbnailsUpdate(){
+			$("#testLocation").load();
+		}
+
+
+	}
+	setupTeam();
 
 	responsiveIframe();
 
 	$(window).resize(function(){
 		responsiveIframe();
 	});
+		
 });
 
 /**
