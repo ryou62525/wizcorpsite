@@ -6465,7 +6465,7 @@ section .slick-dots li.slick-active button {
     margin-bottom: 20px;
 }
 
-.about .team {
+.about #team-slider {
     text-align: center;
 }
 
