@@ -895,6 +895,9 @@ jQuery(function($){
 			dots: true,
 			slidesToShow: 3,
 			slidesToScroll: 3,
+			autoplay: true,
+			pauseOnHover : false,
+			autoplaySpeed: 3000,
 			responsive: [
 				{
 					breakpoint: 979,
@@ -926,6 +929,9 @@ jQuery(function($){
 			dots: true,
 			slidesToShow: 3,
 			slidesToScroll: 3,
+			autoplay: true,
+			pauseOnHover : false,
+			autoplaySpeed: 3000,
 			responsive: [
 				{
 					breakpoint: 979,
@@ -957,6 +963,9 @@ jQuery(function($){
 			dots: true,
 			slidesToShow: 3,
 			slidesToScroll: 3,
+			autoplay: true,
+			pauseOnHover : false,
+			autoplaySpeed: 3000,
 			responsive: [
 				{
 					breakpoint: 979,
