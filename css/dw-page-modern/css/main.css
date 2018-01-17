@@ -655,7 +655,7 @@ textarea {
     line-height: 0;
 }
 
-.:after {
+.row-fluid:after {
     clear: both;
 }
 
@@ -13486,7 +13486,7 @@ body .dwqa-container a {
 {
     outline: none;
 }
-;Slider
+;/* Slider */
 .slick-slider
 {
     position: relative;

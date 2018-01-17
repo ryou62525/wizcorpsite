@@ -888,7 +888,6 @@ jQuery(function($){
 	function setupHtmlGames(){
 
 		var $showcaseSlider = $('#showcase-slider');
-		console.log($showcaseSlider);
 		
 		$showcaseSlider
 		.slick({
@@ -920,8 +919,6 @@ jQuery(function($){
 	//Portfolio
 	function setupPortfolio(){
 		var $portfolioSlider = $('#portfolio-slider');
-		console.log($portfolioSlider);
-		console.log("portofolio");
 		
 		$portfolioSlider
 		.slick({
@@ -952,8 +949,6 @@ jQuery(function($){
 	//team
 	function setupTeam(){
 		var $teamSlider = $('#team-slider');
-		console.log($teamSlider);
-		console.log("team");
 		
 		$teamSlider
 		.slick({
@@ -979,12 +974,6 @@ jQuery(function($){
 				}
 			]
 		});
-
-		function thumbnailsUpdate(){
-			$("#testLocation").load();
-		}
-
-
 	}
 	setupTeam();
 

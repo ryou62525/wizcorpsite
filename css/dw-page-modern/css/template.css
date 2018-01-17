@@ -243,7 +243,7 @@ textarea {
     line-height: 0;
 }
 
-.:after {
+.row-fluid:after {
     clear: both;
 }
 
