@@ -155,7 +155,7 @@ input[type="color"],
 	background: #fff;
 	background-image: none;
 	box-shadow: 0 2px 3px rgba(0,0,0,.1);
-	filter: e(("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
 }
 
 .navbar-static-top .container,
