@@ -891,6 +891,7 @@ jQuery(function($){
 		
 		$showcaseSlider
 		.slick({
+			arrows: false,
 			infinite: true,
 			dots: true,
 			slidesToShow: 3,
@@ -925,6 +926,7 @@ jQuery(function($){
 		
 		$portfolioSlider
 		.slick({
+			arrows: false,
 			infinite: true,
 			dots: true,
 			slidesToShow: 3,
